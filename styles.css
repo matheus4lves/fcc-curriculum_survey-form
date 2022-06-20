@@ -1,5 +1,14 @@
-body {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
   font-family: Geneva, Verdana, sans-serif;
   padding-block: 1.2rem;
   padding-inline: 0;
@@ -53,8 +62,8 @@ label input {
 textarea {
   display: block;
   margin-block-start: 1em;
-  margin-inline: auto 0;
-  max-width: 20rem;
+  inline-size: 100%;
+  block-size: 6.25rem;
 }
 
 input[type="submit"] {
