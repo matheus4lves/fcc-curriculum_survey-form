@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+  font-family: Geneva, Verdana, sans-serif;
+  padding-block: 1.2rem;
+  padding-inline: 0;
+  background-color: #293241;
+  color: #e0fbfc;
+}
+
+.container {
+  margin-block: 0;
+  margin-inline: auto;
+  min-width: 20rem;
+  width: 60vw;
+  max-width: 31.25rem;
+}
+
+header h1,
+header p {
+  margin-block: 0 1.5rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  border-block-end: 2px solid #e0fbfc;
+  padding-block: 0 1.5rem;
+  padding-inline: 0;
+}
+
+/* To make the <select> sit on the same line of the <p> */
+fieldset p:first-child {
+  display: inline-block;
+  margin-block: 1.5rem 0;
+}
+
+label input {
+  display: block;
+  width: 100%;
+  margin-block: 0.5rem;
+}
+
+.inline label {
+  display: block;
+}
+
+.inline input {
+  display: inline-block;
+  width: unset;
+}
+
+textarea {
+  display: block;
+  margin-block-start: 1em;
+  margin-inline: auto 0;
+  max-width: 20rem;
+}
+
+input[type="submit"] {
+  display: block;
+  margin-block-start: 2rem;
+  margin-inline: auto;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  font-size: 1.2rem;
+  background-color: #ee6c4d;
+  border-color: #ee6c4d;
+  color: #e0fbfc;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+/* Applying the following CSS removes system-level styling. This is the first step for customing these "bad" categories */
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #e0fbfc;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+  vertical-align: -4px;
+}
+
+input[type="checkbox"] {
+  vertical-align: -12px;
+}
+
+input[type="radio"].male {
+  border-color: #90e0ef;
+}
+
+input[type="radio"].female {
+  border-color: #ffafcc;
+}
+
+input[type="radio"].male:checked {
+  background-color: #90e0ef;
+}
+
+input[type="radio"].female:checked {
+  background-color: #ffafcc;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ee6c4d;
+}

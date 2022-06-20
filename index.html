@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante vel nisl viverra tempor. Aliquam porta feugiat blandit. Proin quis faucibus enim.</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <fieldset>
+            <label id="name-label"
+              >Enter Your Name:
+              <input id="name" type="text" placeholder="Matheus Alves" required />
+            </label>
+            <label id="email-label"
+              >Enter Your Email:
+              <input id="email" type="email" placeholder="email@email.com" required />
+            </label>
+            <label id="number-label"
+              >Enter Your Age:
+              <input id="number" type="number" min="13" max="120" placeholder="min=13, max=120" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <p>Choose One Option:</p>
+            <select id="dropdown">
+              <option>First Option</option>
+              <option>Second Option</option>
+            </select>
+            <p>Select Your Gender:</p>
+            <input id="male" class="male" type="radio" name="sex" value="male" />
+            <label for="male">Male</label>
+            <input id="female" class="female" type="radio" name="sex" value="female" />
+            <label for="female">Female</label>
+            <p>Which Modules Have You Completed So Far?</p>
+            <div class="inline">
+              <label><input type="checkbox" value="module-1" /> Module 1</label>
+              <label><input type="checkbox" value="module-2" /> Module 2</label>
+              <label><input type="checkbox" value="module-3" /> Module 3</label>
+              <label><input type="checkbox" value="module-4" /> Module 4</label>
+              <label><input type="checkbox" value="module-5" /> Module 5</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <p>Describe Your Experience With This Site:</p>
+            <textarea rows="10" cols="40"></textarea>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
