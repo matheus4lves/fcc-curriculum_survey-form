@@ -1,12 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import "./base/_global.css";
 
 body {
   font-family: Geneva, Verdana, sans-serif;
