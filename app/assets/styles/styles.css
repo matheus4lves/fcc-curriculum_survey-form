@@ -1,21 +1,6 @@
 @import "./base/_global.css";
+@import "./modules/_page.css";
 @import "./modules/_site-header.css";
-
-body {
-  font-family: Geneva, Verdana, sans-serif;
-  padding-block: 1.2rem;
-  padding-inline: 0;
-  background-color: #293241;
-  color: #e0fbfc;
-}
-
-.container {
-  margin-block: 0;
-  margin-inline: auto;
-  min-width: 20rem;
-  width: 60vw;
-  max-width: 31.25rem;
-}
 
 fieldset {
   border: none;

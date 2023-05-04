@@ -1,0 +1,16 @@
+.page {
+  font-family: Geneva, Verdana, sans-serif;
+  padding-block: 1.2rem;
+  background: #293241;
+  color: #e0fbfc;
+}
+
+/* By defining min-width, width, and max-width, you define a default width
+that can shrink and expand within the range defined by the minimum and
+ans maximum values. */
+.page__inner {
+  margin-inline: auto;
+  min-width: 20rem;
+  width: 60vw;
+  max-width: 31.25rem;
+}
